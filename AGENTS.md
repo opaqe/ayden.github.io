@@ -79,7 +79,7 @@ URL은 `_config.yml`의 `permalink: /:year/:month/:day/:title/` 규칙을 따른
 - 새 태그를 만들기 전에 위 목록·기존 글에서 재사용 가능한지 먼저 확인한다 (난립 방지).
 - categories는 가능하면 **1개**로 유지(URL·분류 단순화).
 - **Spring 글은 폴더로 분류**: `spring/_posts/`에 두면 자동으로 `spring` 카테고리가 붙는다. front matter에 `categories: spring`을 **추가로 쓰지 않는다**(중복 부여 방지).
-- **메뉴 연동**: 상단 `Spring` 메뉴(`spring.md`)는 `spring` 카테고리 글을, `블로그` 메뉴(`blog.md`)는 전체 글을 모은다. 메뉴 구성은 `_config.yml`의 `header_pages`.
+- **메뉴 연동**: 상단 `Spring` 메뉴(`spring.md`)는 `spring` 카테고리 글만, `블로그` 메뉴(`blog.md`)는 `spring`을 제외한 글을 모은다. 메뉴 구성은 `_config.yml`의 `header_pages`.
 
 ---
 
