@@ -1,6 +1,6 @@
 # ── 사이트 정보 ───────────────────────────────────────────────
 title: "Ayden's Tech Blog"
-description: "웹·프론트엔드 개발 기록"
+description: "개발 기록"
 author: "Ayden"
 lang: ko-KR
 
@@ -9,8 +9,9 @@ url: "https://opaqe.github.io"
 baseurl: ""
 
 # ── 테마 & 플러그인 ───────────────────────────────────────────
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed       # /feed.xml RSS
   - jekyll-seo-tag    # <head> SEO/OG 메타태그
   - jekyll-sitemap    # /sitemap.xml
