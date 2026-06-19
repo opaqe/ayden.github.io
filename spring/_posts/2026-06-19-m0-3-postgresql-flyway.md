@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "M0-3: PostgreSQL + Flyway 연동 (Spring Boot 3.5 / Java 17)"
-date: 2026-06-19 16:00:00 +0900
+date: 2026-06-19 17:00:00 +0900
 tags: [spring-boot, postgresql, flyway, testcontainers, jpa]
 description: "앱을 PostgreSQL에 연결하고 Flyway로 스키마 마이그레이션을 자동 적용, Testcontainers로 H2 없이 운영과 동일한 DB로 통합 테스트를 그린으로 만든 과정."
 ---
