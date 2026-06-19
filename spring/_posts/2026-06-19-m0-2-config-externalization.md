@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "M0-2: Spring Boot 설정 외부화"
-date: 2026-06-19 10:01:00 +0900
+date: 2026-06-19 16:01:00 +0900
 tags: [spring-boot, gradle, java, actuator]
 description: "모든 환경값을 환경변수/외부 파일로 분리"
 ---
-# Spring Boot 설정 외부화 (12-factor) — M0-2
+
+Spring Boot 설정 외부화 (12-factor) — M0-2
 
 ## 1. 무엇을 / 왜
 

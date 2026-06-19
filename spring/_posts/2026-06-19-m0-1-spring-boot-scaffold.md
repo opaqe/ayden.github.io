@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "M0-1: Spring Boot 프로젝트 스캐폴드"
-date: 2026-06-19 10:00:00 +0900
+date: 2026-06-19 15:00:00 +0900
 tags: [spring-boot, gradle, java, actuator]
 description: "Spring Boot 3.5 + Gradle로 빈 앱을 스캐폴드하고 /actuator/health 200까지 — 버전 선택 근거와 트러블슈팅 정리."
 ---
