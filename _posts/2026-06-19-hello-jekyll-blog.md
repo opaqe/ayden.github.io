@@ -13,7 +13,7 @@ description: "Jekyll과 GitHub Pages로 웹·프론트엔드 기술 블로그를
 
 - **Jekyll** — 마크다운을 정적 사이트로 빌드하는 생성기
 - **GitHub Pages** — `username.github.io` 저장소에 푸시하면 자동 배포
-- **minima** — 가볍고 다크 모드를 지원하는 기본 테마
+- **Chirpy** — 사이드바·다크모드·TOC·카테고리/태그를 갖춘 기술블로그 테마
 
 ## 글은 이렇게 쓴다
 

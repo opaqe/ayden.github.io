@@ -1,48 +1,177 @@
-# ── 사이트 정보 ───────────────────────────────────────────────
-title: "Ayden's Tech Blog"
-description: "개발 기록"
-author: "Ayden"
+# ── 사이트 설정 (Chirpy) ──────────────────────────────────────
+theme: jekyll-theme-chirpy
+
+# UI 언어 (_data/locales/ko-KR.yml 사용 → 화면이 한국어로)
 lang: ko-KR
 
-# 배포 URL (사용자 페이지: https://opaqe.github.io/)
-url: "https://opaqe.github.io"
-baseurl: ""
-
-# ── 테마 & 플러그인 ───────────────────────────────────────────
-theme: minima
-plugins:
-  - jekyll-feed       # /feed.xml RSS
-  - jekyll-seo-tag    # <head> SEO/OG 메타태그
-  - jekyll-sitemap    # /sitemap.xml
-
-minima:
-  skin: auto          # 라이트/다크 자동
-
-# 상단 네비게이션 메뉴 (좌측 사이트 제목은 홈으로 자동 링크됨)
-header_pages:
-  - blog.md
-  - spring.md
-  - about.md
-
-# ── 마크다운 & URL ────────────────────────────────────────────
-markdown: kramdown
-highlighter: rouge
-permalink: /:year/:month/:day/:title/
+# 타임존 › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
 
-# ── 글 기본값 ─────────────────────────────────────────────────
+# ── jekyll-seo-tag 설정 ───────────────────────────────────────
+title: Ayden's Tech Blog        # 메인 제목
+tagline: 개발 기록               # 부제목
+description: >-                  # SEO·atom 피드에 사용
+  웹·백엔드(Spring Boot) 개발을 기록하는 기술 블로그.
+
+# 프로토콜 + 호스트명, 끝에 '/' 없음
+url: "https://opaqe.github.io"
+
+github:
+  username: opaqe
+
+twitter:
+  username:
+
+social:
+  name: Ayden
+  email:
+  fediverse_handle:
+  links:
+    - https://github.com/opaqe
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
+
+# ── 웹 분석 (선택) ────────────────────────────────────────────
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
+
+# 컬러 스킴: 비워두면 시스템 설정 따름 + 좌측 하단 토글 노출
+theme_mode: # [light | dark]
+
+# 미디어 리소스 CDN 엔드포인트
+cdn:
+
+# 좌측 사이드바 아바타 (로컬 또는 CORS 리소스). 예: /assets/img/avatar.png
+avatar:
+
+# 사이트 공통 소셜 미리보기 이미지 (og:image)
+social_preview_image:
+
+# 글 목차(TOC) 전역 스위치
+toc: true
+
+comments:
+  provider: # [disqus | utterances | giscus]
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+baseurl: ""
+
+# ------------ 아래 항목은 수정 비권장 (Chirpy 동작에 필요) ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-# ── 빌드 제외 ─────────────────────────────────────────────────
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
 exclude:
-  - AGENTS.md
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
   - README.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - .bundle
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+  - AGENTS.md
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
