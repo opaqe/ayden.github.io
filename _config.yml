@@ -18,6 +18,12 @@ plugins:
 minima:
   skin: auto          # 라이트/다크 자동
 
+# 상단 네비게이션 메뉴 (좌측 사이트 제목은 홈으로 자동 링크됨)
+header_pages:
+  - blog.md
+  - spring.md
+  - about.md
+
 # ── 마크다운 & URL ────────────────────────────────────────────
 markdown: kramdown
 highlighter: rouge

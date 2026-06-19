@@ -2,7 +2,7 @@
 layout: post
 title: "핵심 키워드를 담은 한 줄 제목"
 date: 2026-06-19 14:00:00 +0900
-categories: frontend
+categories: frontend          # Spring 글이면 이 줄 빼고 파일을 spring/_posts/ 에 저장
 tags: [react, performance]
 description: "검색 결과·SNS 공유에 노출되는 1~2문장 한국어 요약."
 # image: /assets/img/2026-06-19-slug/cover.png
